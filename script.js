@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
   var fields = 'input, textarea',
-      currentLabel = 'current';
+      currentLabel = 'current',
+      focusLabel = 'focus';
 
 $(fields).bind("hasVal",function(){
     var label = $('label[for="'+ $(this).attr('name') +'"]');
@@ -14,11 +15,11 @@ $(fields).bind("hasVal",function(){
     $(this).trigger("hasVal");
   }).on('blur', function(){
     var label = $('label[for="'+ $(this).attr('name') +'"]');
-    label.removeClass('focus');
+    label.removeClass(focusLabel);
     label.addClass('active');
   }).on('focus', function(){
     var label = $('label[for="'+ $(this).attr('name') +'"]');
-    label.addClass('focus');
+    label.addClass(focusLabel);
   });
 
 });
