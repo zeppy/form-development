@@ -7,7 +7,7 @@ form-development
 http://mattdsmith.com/float-label-pattern/. The article shares his solution for forms on mobile devices
 that save space, are aesthetically pleasing but don't forego usability.</p>
 
-<p>Matts solution was to use to use placeholders to label the inputs and then upon typing in an input 
+<p>Matt's solution was to use to use placeholders to label the inputs and then upon typing in an input 
 the label would appear above the input field so that the user still knew what it was.</p>
 
 You can find a working example here: http://giuseppecastiglione.co.uk/form-development
